@@ -1,0 +1,40 @@
+/*
+    ------------------------
+    --------- Home ---------
+    ------------------------
+*/
+
+.main{
+    overflow-x: hidden;
+
+    &--home{
+        section.about{
+            margin-top: var(--space-6-x);
+        }
+
+        section.overview{
+            margin-top: 273px;
+        }
+
+        section.features{
+            margin-top: var(--space-5);
+            margin-bottom: var(--space-6-x);
+        }
+    }
+
+    /* Large Screens */
+    @include breakpoint-up(large){
+        section.about{
+            margin-top: var(--space-9-x);
+        }
+
+        section.overview{
+            margin-top: 273px;
+        }
+
+        section.features{
+            margin-top: 301px;
+            margin-bottom: 301px;
+        }
+    }
+}

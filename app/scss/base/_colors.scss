@@ -1,0 +1,48 @@
+/*
+    ------------------------
+    ------- Colors ---------
+    ------------------------
+*/
+
+:root{
+
+    /* Primary */
+    --color-light-red: hsl(356, 100%, 66%);
+    --color-very-light-red: hsl(355, 100%, 74%);
+    --color-very-dark-blue: hsl(208, 49%, 24%);
+
+    /* Shades */
+    --color-white: hsl(0, 0%, 100%);
+    --color-white-dim: hsla(0, 0%, 100%, .75);
+    --color-gray: hsla(237, 17%, 21%, .08);
+    --color-gray-blue: hsl(240, 2%, 79%);
+    --color-very-dark-gray-blue: hsl(207, 13%, 34%);
+    --color-very-black-blue: hsl(240, 10%, 16%);
+
+    /* Gradients */
+    --gradient-header: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    --gradient-body: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+
+    /* Typography */
+    --color-text-white: var(--color-white);
+    --color-text-white-dim: var(--color-white-dim);
+    --color-text-gray-blue: var(--color-very-dark-gray-blue);
+    --color-text-footer: var(--color-gray-blue);
+    --color-text-red: var(--color-light-red);
+    --color-text-submenu: var(--color-very-dark-blue);
+
+    /* Backgrounds */
+    --color-bg-footer: var(--color-very-black-blue);
+    --color-bg-header: var(--gradient-header);
+    --color-bg-body: var(--gradient-body);
+    --color-bg-cta-hover: var(--color-very-light-red);
+    --color-bg-submenu-mobile: var(--color-gray);
+    --color-bg-submenu-desktop: var(--color-white);
+}
+
+.text-white{
+    color: var(--color-text-white);
+}
+.text-gray{
+    color: var(--color-text-gray-blue);
+}

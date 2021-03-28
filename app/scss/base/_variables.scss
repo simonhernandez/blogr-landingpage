@@ -1,0 +1,27 @@
+/*
+    ------------------------
+    ------- Variables ------
+    ------------------------
+*/
+
+:root{
+    /* Buttons */
+    --button-border-radius: var(--space-1-xxx);
+    --button-border-width: 1px;
+
+    /* Border Radius */
+    --border-radius-menu: 5px;
+
+    /* Header height */
+    --header-height: var(--space-2);
+
+    /* Z Index */
+    --z-back: -1;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+    /* Box Shadow */
+    --bxs-menu: 0 20px 40px rgba(0,0,0,.2434);
+}

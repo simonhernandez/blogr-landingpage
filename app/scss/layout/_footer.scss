@@ -1,0 +1,61 @@
+/*
+    ------------------------
+    -------- Footer --------
+    ------------------------
+*/
+
+.footer{
+    background-color: var(--color-bg-footer);
+    color: var(--color-text-footer);
+    padding: var(--space-4-xx) 0;
+    text-align: center;
+    border-top-right-radius: var(--space-6-x);
+
+    &__logo{
+        display: block;
+        margin-bottom: var(--space-4-xx);
+        img{
+            margin: 0 auto;
+        }
+    }
+
+    &__menu{
+        &:not(:last-of-type){
+            margin-bottom: var(--space-2-xx);
+        }
+    }
+
+    &__item{
+        margin-bottom: var(--space-0-xx);
+
+        &:first-of-type{
+            margin-bottom: var(--space-1-x);
+        }
+    }
+
+    &__link{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    /* Large Screens */
+    @include breakpoint-up(large){
+        
+        @include flex(sb, fs, row);
+        text-align: initial;
+        padding: var(--space-4-x);
+
+        &__menu{
+            &:not(:last-of-type){
+                margin-bottom: initial;
+            }
+        }
+        
+        &__item{
+            &:not(:last-of-type){
+                margin-bottom: var(--space-1);
+            }
+        }
+    }
+}

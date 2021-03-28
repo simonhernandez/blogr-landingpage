@@ -1,0 +1,72 @@
+/*
+    ------------------------
+    --------- About --------
+    ------------------------
+*/
+
+.about{
+    text-align: center;
+
+    &__header{
+        margin-bottom: var(--space-2-x);
+    }
+    
+    &__image-container{
+        width: 100%;
+        min-height: 326px;
+        background-image: url(../../../images/illustration-editor-mobile.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-bottom: var(--space-3);
+    }
+
+    &__text-container{
+        > *:not(:last-child){
+            margin-bottom: var(--space-2-xx);
+        }
+
+        section{
+            .heading{
+                margin-bottom: var(--space-1);
+            }
+        }
+    }
+
+    /* Large Screens */
+    @include breakpoint-up(large){
+        
+
+        &__header{
+            margin-bottom: var(--space-5-xxx);
+        }
+        
+        &__body{
+            @include flex(sb, c, row);
+            position: relative;
+        }
+        
+        &__image-container{
+            width: 62.71%;
+            height: 198%;
+            margin-bottom: initial;
+            order: 2;
+            background-image: url(../../../images/illustration-editor-desktop.svg);
+            background-position: center right;
+            background-size: contain;
+            position: absolute;
+            right: -20%;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+        }
+        
+        &__text-container{
+            text-align: initial;
+            max-width: 540px;
+
+            > *:not(:last-child){
+                margin-bottom: var(--space-4);
+            }
+        }
+    }
+}

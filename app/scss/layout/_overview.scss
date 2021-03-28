@@ -1,0 +1,60 @@
+/*
+    ------------------------
+    ------ Overview --------
+    ------------------------
+*/
+
+.overview{
+    text-align: center;
+    background-image: url(../../../images/bg-pattern-circles.svg), var(--gradient-body);
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    background-position: center -280px, center center;
+    padding: 295px 0 109px;
+    border-bottom-left-radius: var(--space-6-x);
+    border-top-right-radius: var(--space-6-x);
+
+    position: relative;
+
+    &__image-container{
+        position: absolute;
+        top: -27%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        @include flex(c, c, row);
+        max-width: 472px;
+    }
+
+    &__text-container{
+        .heading{
+            margin-bottom: var(--space-0-xxx);
+        }
+    }
+
+    /* Large Screens */
+    @include breakpoint-up(large){
+        background-size: 70.41%, contain;
+        background-position: -55% 90%, center center;
+
+        .wrapper{
+            position: relative;
+        }
+
+        padding: var(--space-7) 0;
+
+        &__text-container{
+            text-align: initial;
+            max-width: 540px;
+            margin-left: auto;
+        }
+
+        &__image-container{
+            position: absolute;
+            top: -130%;
+            left: 0;
+            right: initial;
+            max-width: 520px;
+        }
+    }
+}
